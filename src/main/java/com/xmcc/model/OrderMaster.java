@@ -2,7 +2,10 @@ package com.xmcc.model;
 
 import com.xmcc.common.OrderEnums;
 import com.xmcc.common.PayEnums;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.Entity;
@@ -10,10 +13,14 @@ import javax.persistence.Id;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Data
 @DynamicUpdate
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class OrderMaster implements Serializable {
 
     /** 订单id. */
@@ -46,4 +53,6 @@ public class OrderMaster implements Serializable {
 
     /** 更新时间. */
     private Date updateTime;
+
+
 }

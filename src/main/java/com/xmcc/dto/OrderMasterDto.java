@@ -5,7 +5,6 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import org.hibernate.validator.constraints.Length;
 
-
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
@@ -36,5 +35,7 @@ public class OrderMasterDto {
     @NotEmpty(message = "订单项不能为空")
     @Valid //表示需要嵌套验证
     @ApiModelProperty(value = "订单项集合",dataType = "List")
-    private List<OrderDetailDto> items;
+    private List<OrderDetailDto> orderDetailList;
+
+
 }
