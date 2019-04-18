@@ -47,7 +47,7 @@ public class OrderMasterServiceImpl implements OrderMasterService {
     public ResultResponse insertOrder(OrderMasterDto masterDto) {
 
         //取出订单项
-        List<OrderDetailDto> items = masterDto.getOrderDetailList();
+        List<OrderDetailDto> items = masterDto.getItems();
         //创建集合来存储OrderDetail
         ArrayList<OrderDetail> detailList = Lists.newArrayList();
         //初始化订单总金额

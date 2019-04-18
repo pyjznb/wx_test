@@ -22,5 +22,4 @@ public enum ResultEnums {
         this.msg = msg;
     }
 
-
 }

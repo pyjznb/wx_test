@@ -15,8 +15,8 @@ import java.io.Serializable;
 @Entity
 public class Student implements Serializable{
 
-    @Id//指定主键
-    @GeneratedValue(strategy = GenerationType.IDENTITY)//主键的生成策略
+    @Id//指定主键  因为实体类中的属性是和数据库中的表中字段一一对应的  所以要指明主键
+    @GeneratedValue(strategy = GenerationType.IDENTITY)//主键的生成策略(自增)
     private Integer id;
 
     private String name;

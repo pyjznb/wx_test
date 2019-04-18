@@ -19,7 +19,7 @@ public class ProductInfoDto implements Serializable{
     private String productId;
 
     /** 名字 */
-    @JsonProperty("name")
+    @JsonProperty("name") //前端返回的数据名字定义成 name
     private String productName;
 
     /** 单价 */

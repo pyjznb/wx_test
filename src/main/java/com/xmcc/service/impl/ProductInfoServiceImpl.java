@@ -4,7 +4,6 @@ import com.xmcc.common.ResultEnums;
 import com.xmcc.common.ResultResponse;
 import com.xmcc.dto.ProductCategoryDto;
 import com.xmcc.dto.ProductInfoDto;
-import com.xmcc.exception.CustomException;
 import com.xmcc.model.ProductCategory;
 import com.xmcc.model.ProductInfo;
 import com.xmcc.repository.ProductCategoryRepository;

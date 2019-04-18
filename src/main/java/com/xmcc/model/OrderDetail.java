@@ -11,7 +11,7 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 
 @Entity
-@Data
+@Data//相当于  get set toString
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
